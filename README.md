@@ -30,3 +30,8 @@ new node my-project
 ```
 
 The command above will create a new directory called `my-project` with a `package.json` file inside.
+
+## Commands
+
+- `node <project_name>`: Create a new Node.js project.
+- `node-ts <project_name>`: Create a new Node.js project with TypeScript.
