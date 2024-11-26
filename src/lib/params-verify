@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Check if the project type is valid
+if [ -z "$TYPE" ]; then
+  echo "Please provide a project type"
+  exit 1
+fi
+
+# Check if the project type is valid
+if [ -z "$PROJECT_NAME" ]; then
+  echo "Please provide a project name"
+  exit 1
+fi
+
+# Check if the project already exists
+if [ -d "$PROJECT_NAME" ]; then
+  echo "Project already exists"
+  exit 1
+fi

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# This script is used to create a new project in the current directory
+
+NEWPATH=$HOME/new
+
+source $NEWPATH/src/lib/config
+source $NEWPATH/src/lib/params-verify
+
+source $NEWPATH/src/services/node
+source $NEWPATH/src/services/node-ts

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+TYPE=("$1")
+PROJECT_NAME=("$2")

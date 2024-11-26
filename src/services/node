@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$TYPE" == "node" ]; then
+  echo "Creating a new Node.js project" &&
+
+  mkdir $PROJECT_NAME &&
+  cd $PROJECT_NAME &&
+
+  npm init -y &&
+  npm pkg set scripts.dev="node src/index.js" &&
+
+
+  mkdir src &&
+  echo "console.log('Hello, World!');" >src/index.js &&
+  cd .. &&
+  echo "Project created successfully"
+fi
